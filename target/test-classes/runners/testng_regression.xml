@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Regression Suite for Swag Labs" thread-count="4"
+	parallel="tests" verbose="4">
+
+
+	<listeners>
+		<listener
+			class-name="swaglabs.listeners.AnnotationTransformer" />
+		<listener
+			class-name="swaglabs.listeners.AllureReportListener" />
+		</listeners>
+
+<test name="Login Page Test_chrome127">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="127"/>
+		<classes>
+			<class name = "swaglabs.testCases.LoginPageTest"/>
+		</classes>
+	</test>
+	
+<!--	<test name="Login Page Test_chrome113">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<parameter name="browserversion" value="113"/>-->
+<!--		<classes>-->
+<!--			<class name = "swaglabs.testCases.LoginPageTest"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+	<!-- 
+	<test name="Product Listing Page Test">
+		<classes>
+			<class name = "swaglabs.testCases.ProductListingPageTest"/>
+		</classes>
+		</test>
+		
+		<test name="Product Details Page Test">
+		<classes>
+			<class name = "swaglabs.testCases.ProductDetailsPageTest"/>
+		</classes>
+		
+	</test>
+	
+	<test name="Cart Page Test">
+		<classes>
+			<class name = "swaglabs.testCases.CartPageTest"/>
+		</classes>
+		
+	</test>
+	
+	<test name="Checkout Page Test">
+		<classes>
+			<class name = "swaglabs.testCases.CheckoutPageTest"/>
+		</classes>
+		
+	</test>
+	
+		<test name="Checkout Overview Page Test">
+		<classes>
+			<class name = "swaglabs.testCases.CheckoutOverviewPageTest"/>
+		</classes>
+		
+	</test>
+	-->
+	
+	
+		
+</suite>
