@@ -6,16 +6,16 @@ import swaglabs.utils.ElementUtil;
 
 public class OrderCompletePage {
 
-	private WebDriver driver;
-	private ElementUtil elementUtil;
-	private By successHeader = By.xpath("//h2[@class='complete-header' and text()='Thank you for your order!']");
+    private WebDriver driver;
+    private ElementUtil elementUtil;
+    private By successHeader = By.xpath("//h2[@class='complete-header' and text()='Thank you for your order!']");
 
-	public OrderCompletePage(WebDriver driver) {
-		this.driver = driver;
-		elementUtil = new ElementUtil(driver);
-	}
+    public OrderCompletePage(WebDriver driver) {
+        this.driver = driver;
+        elementUtil = new ElementUtil(driver);
+    }
 
-	public String getSuccessHeaderText() {
-		return elementUtil.doGetText(successHeader);
-	}
+    public String getSuccessHeaderText() {
+        return elementUtil.doGetText(successHeader);
+    }
 }
